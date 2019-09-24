@@ -1,0 +1,13 @@
+@import "../styles/global.scss";
+.header {
+  background-color: $boss_black_header;
+  Row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar {
+    .navlink {
+      color: $boss_yellow !important;
+    }
+  }
+}

@@ -1,18 +1,17 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { Navbar, Container, Row, Col } from "react-bootstrap"
-import "./header.scss"
+import { Navbar, Container, Row, Col, Nav } from "react-bootstrap"
+import styles from "./header.module.scss"
 import logo from "../images/trusted_consumer_logo.png"
-console.log(logo)
 
 const Header = ({ siteTitle }) => (
-  <Container className="header" fluid="true">
+  <Container className={styles.header} fluid="true">
     <Row>
       <Col>
         <Container>
           <Row>
             <Col>
-              <Navbar>
+              <Navbar className="justify-content-between">
                 <Navbar.Brand href="#home">
                   <img
                     src={logo}
@@ -21,6 +20,13 @@ const Header = ({ siteTitle }) => (
                     alt="Trusted Consumer Logo"
                   />
                 </Navbar.Brand>
+                <Nav className={styles.navbar}>
+                  <Nav.Link>ABOUT TRUSTED CONSUMER</Nav.Link>
+                  <Nav.Link className={styles.navlink}>PARTNERS</Nav.Link>
+                  <Nav.Link className={styles.navlink}>OUR OFFERS</Nav.Link>
+                  <Nav.Link className={styles.navlink}>OPT OUT</Nav.Link>
+                  <Nav.Link className={styles.navlink}>CONTACT US</Nav.Link>
+                </Nav>
               </Navbar>
             </Col>
           </Row>

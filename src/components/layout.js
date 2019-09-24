@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import Header from "./Header"
 import Footer from "./Footer"
-import "./layout.scss"
+import style from "./layout.module.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,15 +19,15 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Container>
+      <Container fluid="true" className={style.main_container}>
         <Row>
           <Col>{children}</Col>
         </Row>
       </Container>
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 
