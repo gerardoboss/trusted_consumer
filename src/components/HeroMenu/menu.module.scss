@@ -1,4 +1,12 @@
+@import "../../styles/global.scss";
 .small_menu {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  .product_description {
+    display: flex;
+    flex-direction: column;
+  }
+  .learMore{
+    color: $boss_yellow;
+  }
 }

@@ -1,3 +1,9 @@
 $boss_yellow: #fbac0e;
 $boss_black_header: #251f14;
 $boss_background: #171717;
+
+.row,
+Row {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}

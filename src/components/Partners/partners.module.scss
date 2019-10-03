@@ -1,0 +1,26 @@
+@import "../../styles/global.scss";
+.partners{
+  margin-top: 1rem;
+  background-image: url(../../images/bear_bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  .content{
+    background-color: black;
+    padding: 1rem;
+    .title{
+      color: $boss_yellow;
+      font-size: 0.7rem;
+    }
+    .partner_content{
+      color: white;
+      margin: 0.5rem 0;
+      font-size: 1.5rem;
+    }
+    .button_bar{
+      .partner_button{
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
