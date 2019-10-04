@@ -1,0 +1,44 @@
+@import "../../styles/global.scss";
+.our_promise{
+  margin-top: 8rem;
+  height: 751px;
+  background-image: url(../../images/bear_bg3.jpg);
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-size: contain;
+  background-color: black;
+  align-items: stretch;
+  display: flex;
+  .holder{
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    min-height: 100%;
+    .content{
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      height: 100%;
+      padding: 5rem 3rem 3rem;
+      width: 75%;
+      .title{
+        font-size: 2rem;
+      }
+      .points{
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid $boss_yellow;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        .title{
+          display: flex;
+          font-size: 1.4rem;
+        }
+        .content{
+          display: flex;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

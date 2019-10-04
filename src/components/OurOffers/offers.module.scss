@@ -1,0 +1,39 @@
+@import "../../styles/global.scss";
+.our_offers{
+  border: 1px solid $boss_yellow;
+  padding: 5rem;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+  justify-content: center;
+  .title{
+    color: $boss_yellow;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 100%;
+  }
+  .sub_title{
+    font-size: 2rem;
+    flex-basis: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  .content{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .button_bar{
+    margin-top: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    button{
+      font-size: 1.2rem;
+    }
+  }
+}

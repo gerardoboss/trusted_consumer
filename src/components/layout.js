@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
           <Col>{children}</Col>
         </Row>
       </Container>
-      <Footer></Footer>
+      <Footer/>
     </Container>
   )
 }

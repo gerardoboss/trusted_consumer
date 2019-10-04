@@ -1,0 +1,43 @@
+@import "../../styles/global.scss";
+.opt_out{
+  background-image: url(../../images/optout_bg.jpg);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  .opt_out_inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main_title{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+
+      .title{
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+      }
+      .description{
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+      }
+    }
+    .opt_outs{
+      display: flex;
+      .opt_out{
+        display: flex;
+        flex-direction: column;
+        .description{
+          display: flex;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
