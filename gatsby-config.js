@@ -5,8 +5,20 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: 'Roboto',
+            variants: ['300', '400', '500', '700']
+          },
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-sass",
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

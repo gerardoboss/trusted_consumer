@@ -19,11 +19,11 @@ const OptOut = () => (
               </div>
               <div className={styles.opt_outs}>
                 <div className={styles.opt_out}>
-                  <Button variant="warning">Manage My Browser Opt-Out</Button>
+                  <Button variant="outline-warning">Manage My Browser Opt-Out</Button>
                   <div className={styles.description}>Select "Manage My Browser's Opt Outs" to see which participating NAI members be engaging in the interest-Based Advertising on this browser and to choose which members IBA activities you wish to opt out of.</div>
                 </div>
                 <div className={styles.opt_out}>
-                  <Button variant="warning">Learn About Mobile Device Opt-Outs</Button>
+                  <Button variant="outline-warning">Learn About Mobile Device Opt-Outs</Button>
                   <div className={styles.description}>Select "Manage My Browser's Opt Outs" to see which participating NAI members be engaging in the interest-Based Advertising on this browser and to choose which members IBA activities you wish to opt out of.</div>
                 </div>
               </div>

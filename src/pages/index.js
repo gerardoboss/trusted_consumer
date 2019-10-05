@@ -6,6 +6,7 @@ import Partners from "../components/Partners/Partners"
 import OurOffers from "../components/OurOffers/OurOffers"
 import OurPromise from "../components/OurPromise/OurPromise"
 import OptOut from "../components/OptOut/OptOut"
+import PrivacyAndEasy from "../components/PrivacyAndEasy/PrivacyAndEasy"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <OurOffers/>
     <OurPromise/>
     <OptOut/>
+    <PrivacyAndEasy/>
   </Layout>
 )
 

@@ -1,11 +1,20 @@
 import React from "react"
 import styles from "./privacyandeasy.module.scss"
-import { Container, Row, Col, Form } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
+import TextField from '@material-ui/core/TextField';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    type: 'dark', // Switching the dark mode on is a single property value change.
+  },
+});
 
 const PrivacyAndEasy = () => (
-  <Container fluid >
+  <Container fluid className={styles.privacy_easy}>
     <Row>
-      <Col className={styles.privacy_easy}>
+      <Col className={styles.privacy_easy_inside}>
         <Container>
           <Row>
             <Col>
@@ -19,14 +28,31 @@ const PrivacyAndEasy = () => (
           </Row>
           <Row>
             <Col>
-              <Form>
-                <Form.Row>
-                  <Form.Group as={Col} controlId="name">
-                    <Form.Label column={Row}>YOUR NAME</Form.Label>
-                    <Form.Control/>
-                  </Form.Group>
-                </Form.Row>
-              </Form>
+              <ThemeProvider theme={theme}>
+              <form>
+                <Container>
+                  <Row>
+                    <Col>
+                      <TextField id="name" label="Name" margin="normal"/>
+                    </Col>
+                    <Col>
+                      <TextField id="email" label="Email" margin="normal"/>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <TextField id="company" label="Company" margin="normal"/>
+                    </Col>
+                  <Col><TextField id="subject" label="Subject" margin="normal"/></Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <TextField id="message" label="Message" margin="normal"/>
+                    </Col>
+                  </Row>
+                </Container>
+              </form>
+              </ThemeProvider>
             </Col>
           </Row>
         </Container>
