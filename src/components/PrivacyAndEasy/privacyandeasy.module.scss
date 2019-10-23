@@ -1,8 +1,33 @@
+@import "../../styles/global.scss";
 .privacy_easy{
   display: flex;
   justify-content: center;
   .privacy_easy_inside{
-    display: flex;
-
+    display:flex;
+    justify-content: center;
+    .title_privacy{
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .title{
+        text-align: center;
+      }
+      .description{
+        text-align: center;
+      }
+    }
+    .form_container{
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      .privacy_form{
+        border: 1px solid $boss_yellow;
+        padding: 2rem 1rem;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+        display: flex;
+        max-width: 90%;
+      }
+    }
   }
 }

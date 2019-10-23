@@ -7,6 +7,7 @@ import OurOffers from "../components/OurOffers/OurOffers"
 import OurPromise from "../components/OurPromise/OurPromise"
 import OptOut from "../components/OptOut/OptOut"
 import PrivacyAndEasy from "../components/PrivacyAndEasy/PrivacyAndEasy"
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
