@@ -8,6 +8,7 @@ import InputLabel from "@material-ui/core/InputLabel"
 import Input from "@material-ui/core/Input"
 import Button from "@material-ui/core/Button"
 import { MuiThemeProvider } from "@material-ui/core"
+import contactUsImage  from "../../images/contact_us_title.png"
 
 const theme = createMuiTheme({
     palette: {
@@ -54,6 +55,11 @@ const PrivacyAndEasy = () => (
       <Row>
         <Col className={styles.privacy_easy_inside}>
           <Container className={styles.title_privacy}>
+            <Row className="justify-content-md-center">
+              <Col md="6" className={styles.contact_image}>
+                <img src={contactUsImage} alt="Contact Us"/>
+              </Col>
+            </Row>
             <Row className="justify-content-md-center">
               <Col md="6">
                 <div className={styles.title}>
@@ -121,7 +127,7 @@ const PrivacyAndEasy = () => (
                         </Col>
                       </Row>
                       <Row>
-                        <Col>
+                        <Col className={styles.button_bar}>
                           <Button variant="contained" size="medium" color="primary">GET IN TOUCH</Button>
                         </Col>
                       </Row>

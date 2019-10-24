@@ -1,7 +1,9 @@
 @import "../../styles/global.scss";
 .privacy_easy{
+  background-color: $boss_background;
   display: flex;
   justify-content: center;
+  background-image: url(../../images/contact_us_bg.jpg);
   .privacy_easy_inside{
     display:flex;
     justify-content: center;
@@ -10,6 +12,11 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      .contact_image{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
       .title{
         text-align: center;
       }
@@ -22,11 +29,19 @@
       display: flex;
       justify-content: center;
       .privacy_form{
-        border: 1px solid $boss_yellow;
+        border: 0.5px solid $boss_yellow;
         padding: 2rem 1rem;
         box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
         display: flex;
         max-width: 90%;
+        .button_bar{
+          display: flex;
+          justify-content: center;
+          margin-top: 1rem;
+          button{
+            color: black !important;
+          }
+        }
       }
     }
   }

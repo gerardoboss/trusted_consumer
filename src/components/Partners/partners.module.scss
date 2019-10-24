@@ -1,7 +1,9 @@
 @import "../../styles/global.scss";
 .partners{
+  background-color: $boss_background;
   margin-top: 1rem;
   background-image: url(../../images/bear_bg2.jpg);
+  background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;

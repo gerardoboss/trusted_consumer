@@ -1,12 +1,12 @@
 @import "../../styles/global.scss";
 .our_promise{
+  background-color: $boss_background;
   margin-top: 8rem;
   height: 751px;
   background-image: url(../../images/bear_bg3.jpg);
   background-repeat: no-repeat;
   background-position: right 50%;
   background-size: contain;
-  background-color: black;
   align-items: stretch;
   display: flex;
   .holder{

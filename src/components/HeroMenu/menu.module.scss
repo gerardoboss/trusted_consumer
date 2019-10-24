@@ -1,12 +1,21 @@
 @import "../../styles/global.scss";
 .small_menu {
+  background-color: $boss_background;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   .product_description {
     display: flex;
     flex-direction: column;
   }
   .learMore{
     color: $boss_yellow;
+  }
+  .welcome_menu{
+    text-align: center;
+  }
+  .privacy_leader{
+    text-align: center;
+    font-size: 1.4rem;
   }
 }

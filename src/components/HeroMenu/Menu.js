@@ -4,9 +4,21 @@ import styles from "./menu.module.scss"
 import whatWeDo from "../../images/what_we_do.png"
 import support from "../../images/support.png"
 import consumer from "../../images/customer_benefit.png"
+import welcome from "../../images/welcome_menu.png"
 
 const Menu = () => (
   <Container className={styles.small_menu}>
+    <Row>
+      <Col className={styles.welcome_menu}>
+        <img src={welcome} alt="Welcome to Trusted Consumer"/>
+      </Col>
+    </Row>
+    <Row>
+      <Col className={styles.privacy_leader}>
+        Privacy Leader<br/>
+        Streamlining Business Consumer Information
+      </Col>
+    </Row>
     <Row>
       <Col className={["align-self-end", styles.product_description].join(" ")}>
         <img src={whatWeDo} width="223" height="200" alt="What We Do" />
