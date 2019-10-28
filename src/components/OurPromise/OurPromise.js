@@ -3,7 +3,7 @@ import styles from "./ourpromise.module.scss"
 import { Container, Row, Col } from "react-bootstrap"
 
 const OurPromise = () => (
-  <Container fluid  className={styles.our_promise}>
+  <Container fluid  className={styles.our_promise} id="ourPromise">
     <Row>
       <Col>
         <Container className={styles.holder}>

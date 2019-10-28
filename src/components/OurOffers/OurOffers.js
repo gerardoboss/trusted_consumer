@@ -3,7 +3,7 @@ import styles from "./offers.module.scss"
 import { Container, Row, Col, Button } from "react-bootstrap"
 
 const OurOffers = () => (
-  <Container className={styles.our_offers}>
+  <Container className={styles.our_offers} id="ourOffers">
     <Row>
       <Col>
         <div className={styles.title}>

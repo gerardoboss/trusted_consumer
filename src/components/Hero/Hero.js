@@ -4,12 +4,12 @@ import styles from "./hero.module.scss"
 import trusted from "../../images/trusted_connection.png"
 
 const Hero = () => (
-  <Container fluid="true" className={styles.hero}>
-    <Row >
+  <Container fluid="true" className={styles.hero} id="hero">
+    <Row className={styles.trusted_row}>
       <Col  className={styles.trusted} md={{ span: 6, offset: 3 }}>
         <Container>
           <Row>
-            <Col>
+            <Col className={styles.trustedLogo}>
               <img src={trusted} alt="Trusted Connection"/>
             </Col>
           </Row>

@@ -3,6 +3,7 @@ import React from "react"
 import { Navbar, Container, Row, Col, Nav } from "react-bootstrap"
 import styles from "./header.module.scss"
 import logo from "../images/trusted_consumer_logo.png"
+import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <Container className={styles.header} fluid="true">
@@ -20,12 +21,12 @@ const Header = ({ siteTitle }) => (
                     alt="Trusted Consumer Logo"
                   />
                 </Navbar.Brand>
-                <Nav className={styles.navbar}>
-                  <Nav.Link>ABOUT TRUSTED CONSUMER</Nav.Link>
-                  <Nav.Link className={styles.navlink}>PARTNERS</Nav.Link>
-                  <Nav.Link className={styles.navlink}>OUR OFFERS</Nav.Link>
-                  <Nav.Link className={styles.navlink}>OPT OUT</Nav.Link>
-                  <Nav.Link className={styles.navlink}>CONTACT US</Nav.Link>
+                <Nav className={styles.trustBar}>
+                  <Link to="/#heroMenu" className={styles.trustLink}>ABOUT TRUSTED CONSUMER</Link>
+                  <Link className={styles.trustLink} to="/#partners">PARTNERS</Link>
+                  <Link className={styles.trustLink} to="/#ourOffers">OUR OFFERS</Link>
+                  <Link className={styles.trustLink} to="/#optOut">OPT OUT</Link>
+                  <Link className={styles.trustLink} to="/#privacy">CONTACT US</Link>
                 </Nav>
               </Navbar>
             </Col>

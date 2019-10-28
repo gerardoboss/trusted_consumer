@@ -7,11 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
   .content{
+    border: 1px solid $boss_yellow_dark;
     background-color: black;
     padding: 1rem;
-    margin-top: 700px;
+    margin-top: 550px;
     .title{
       color: $boss_yellow;
       font-size: 1rem;

@@ -51,7 +51,7 @@ const theme = createMuiTheme({
 
 const PrivacyAndEasy = () => (
   <MuiThemeProvider theme={theme}>
-    <Container fluid className={styles.privacy_easy}>
+    <Container fluid className={styles.privacy_easy} id="privacy">
       <Row>
         <Col className={styles.privacy_easy_inside}>
           <Container className={styles.title_privacy}>

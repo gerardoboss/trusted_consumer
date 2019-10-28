@@ -1,13 +1,12 @@
 @import "../styles/global.scss";
 .header {
   background-color: $boss_black_header;
-  Row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .navbar {
-    .navlink {
+  .trustBar {
+    .trustLink, .trustLink:visited, .trustLink:hover, .navbar-light, a, a:hover, a:visited{
       color: $boss_yellow !important;
+    }
+   a{
+      margin: 0 1rem;
     }
   }
 }

@@ -7,6 +7,15 @@
   .product_description {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    .product_image{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .product_text{
+      display: flex;
+    }
   }
   .learMore{
     color: $boss_yellow;

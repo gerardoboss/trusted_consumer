@@ -25,7 +25,8 @@
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "smooth-scroll": "^16.1.0"
   },
   "devDependencies": {
     "@material-ui/core": "^4.5.0",

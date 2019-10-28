@@ -33,6 +33,9 @@
       .opt_out{
         display: flex;
         flex-direction: column;
+        .output_button{
+          margin-bottom: 0.5rem;
+        }
         .description{
           display: flex;
           font-size: 0.8rem;

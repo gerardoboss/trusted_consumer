@@ -3,7 +3,7 @@ import styles from "./partners.module.scss"
 import { Container, Row, Col, Button } from "react-bootstrap"
 
 const Partners = () => (
-  <Container fluid className={["align-bottom", styles.partners].join(" ")}>
+  <Container fluid className={["align-bottom", styles.partners].join(" ")} id="partners">
     <Row>
       <Col md={{ span: 7, offset: 5 }} className={["align-self-center", styles.content].join(" ")}>
        <div className={styles.title}>PARTNERS</div>
