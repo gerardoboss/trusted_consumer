@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./partners.module.scss"
-import { Container, Row, Col, Button } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
+import { Link } from 'gatsby'
 
 const Partners = () => (
   <Container fluid className={["align-bottom", styles.partners].join(" ")} id="partners">
@@ -11,7 +12,7 @@ const Partners = () => (
           The Trusted Consumer network connects consumers with TCPA and TSR opt-in business listings making it easier for consumers to control information they provided to businesses
         </div>
         <div className={styles.button_bar}>
-          <Button variant="warning" className={styles.partner_button}>VIEW OUR PARTNERS</Button>
+          <Link className={styles.partner_button} to="/partners/" state={{modal: true }}>VIEW OUR PARTNERS</Link>
         </div>
       </Col>
     </Row>
