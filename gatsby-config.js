@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Trusted Consumer`,
+    description: `. Trusted Consumer works with businesses who have a passion to protect and uphold consumer privacy. Individuals and businesses can easily interact creating a bridge for consumers to research and manage levels of contact with businesses.`,
+    author: `Gerardo Jaramillo`,
   },
   plugins: [
     {
@@ -10,8 +10,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Roboto',
-            variants: ['300', '400', '500', '700']
+            family: "Roboto",
+            variants: ["300", "400", "500", "700"],
           },
         ],
       },
@@ -26,8 +26,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -41,5 +49,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-modal-routing`,
+    {
+      resolve: `gatsby-source-wordpress`, options: {
+        baseUrl: `http://trusted-consumer-backend.azurewebsites.net/`,
+        protocol: `http`,
+        hostingWPCOM: false,
+      },
+    },
   ],
 }

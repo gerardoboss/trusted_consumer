@@ -6,7 +6,7 @@ import support from "../../images/support.png"
 import consumer from "../../images/customer_benefit.png"
 import welcome from "../../images/welcome_menu.png"
 
-const Menu = () => (
+const Menu = ({whatWeDoText, supportText, consumerText}) => (
   <Container className={styles.small_menu} id="heroMenu">
     <Row>
       <Col className={styles.welcome_menu}>
@@ -24,34 +24,25 @@ const Menu = () => (
         <div className={styles.product_image}>
           <img src={whatWeDo} width="223" height="200" alt="What We Do" />
         </div>
-        <p className={styles.product_text}>Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.</p>
+        <p className={styles.product_text} dangerouslySetInnerHTML={{__html: whatWeDoText}}/>
         <p className={styles.learMore}>Learn More</p>
       </Col>
       <Col className={["align-self-end", styles.product_description].join(" ")}>
         <div className={styles.product_image}><img src={support} width="217" height="171" alt="What We Do" /></div>
-        <p className={styles.product_description}>Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.</p>
+        <p className={styles.product_description} dangerouslySetInnerHTML={{__html: supportText}}/>
         <p className={styles.learMore}>Learn More</p>
       </Col>
       <Col className={["align-self-end", styles.product_description].join(" ")}>
         <div className={styles.product_image}>
           <img src={consumer} width="275" height="163" alt="What We Do" />
         </div>
-        <p className={styles.product_text}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
+        <p className={styles.product_text} dangerouslySetInnerHTML={{__html: consumerText}} />
         <p className={styles.learMore}>Learn More</p>
       </Col>
     </Row>
   </Container>
 )
+
+
 
 export default Menu
