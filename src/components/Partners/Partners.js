@@ -10,7 +10,7 @@ const Partners = ({title, conent}) => (
        <div className={styles.title} dangerouslySetInnerHTML={{__html: title}}/>
         <div className={styles.partner_content} dangerouslySetInnerHTML={{__html: conent}}/>
         <div className={styles.button_bar}>
-          <Link className={styles.partner_button} to="/partners/" state={{modal: true }}>VIEW OUR PARTNERS11</Link>
+          <Link className={styles.partner_button} to="/partners/" state={{modal: true }}>VIEW OUR PARTNERS</Link>
         </div>
       </Col>
     </Row>
