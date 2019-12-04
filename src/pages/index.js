@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
   let whatWeDo;
   let support;
   let customer;
-  let ourPartners;
+  //let ourPartners;
   let contactUs;
   let browserOptOut;
   let browserOptOutTitle;
@@ -79,7 +79,7 @@ const IndexPage = ({ data }) => {
             partnersContent = node.content
             partnersTitle = node.title
             break
-
+          default:
         }
         return ""
       })}
