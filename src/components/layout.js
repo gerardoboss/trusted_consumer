@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
+import  Seo  from "./Seo"
 
 import Header from "./Header"
 import Footer from "./Footer"
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <Container fluid>
+      <Seo />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Container className={style.main_container} fluid>
         <Row>
