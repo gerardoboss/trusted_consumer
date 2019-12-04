@@ -49,7 +49,7 @@ const theme = createMuiTheme({
   }
 )
 
-const PrivacyAndEasy = () => (
+const PrivacyAndEasy = ({contactUs}) => (
   <MuiThemeProvider theme={theme}>
     <Container fluid className={styles.privacy_easy} id="privacy">
       <Row>
@@ -65,10 +65,7 @@ const PrivacyAndEasy = () => (
                 <div className={styles.title}>
                   Privacy and Easy Opt-Out
                 </div>
-                <div className={styles.description}>
-                  Please use the form below to make any opt-out or special request to Trusted Consumer partners. We will
-                  review every message to expedite your request to a business within our network.
-                </div>
+                <div className={styles.description} dangerouslySetInnerHTML={{__html: contactUs}}/>
               </Col>
             </Row>
             <Row>

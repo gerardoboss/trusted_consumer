@@ -11,12 +11,8 @@ export default ({ title, content }) => {
           <div className={styles.title}>
             OUR OFFERS
           </div>
-          <div className={styles.sub_title}>
-            {title}
-          </div>
-          <div className={styles.content}>
-           {content}
-          </div>
+          <div className={styles.sub_title} dangerouslySetInnerHTML={{__html: title}}/>
+          <div className={styles.content} dangerouslySetInnerHTML={{__html: content}}/>
           <div className={styles.button_bar}>
             <Button variant="warning">LEARN MORE</Button>
           </div>
