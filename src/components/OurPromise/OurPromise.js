@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./ourpromise.module.scss"
 import { Container, Row, Col } from "react-bootstrap"
 
-const OurPromise = () => (
+const OurPromise = ({privacyTitle, privacy, completeTransparencyTitle, completeTransparency, ownTitle, own}) => (
   <Container fluid  className={styles.our_promise} id="ourPromise">
     <Row>
       <Col>
@@ -12,28 +12,16 @@ const OurPromise = () => (
               <div className={styles.content}>
                 <div className={styles.title}>Our Promise</div>
                 <div className={styles.points}>
-                  <div className={styles.title}>
-                    Privacy is your right!
-                  </div>
-                  <div className={styles.content}>
-                    Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data. Ship it user story iterate engaging
-                  </div>
+                  <div className={styles.title} dangerouslySetInnerHTML={{__html: privacyTitle}} />
+                  <div className={styles.content} dangerouslySetInnerHTML={{__html: privacy}} />
                 </div>
                 <div className={styles.points}>
-                  <div className={styles.title}>
-                    Complete Transparency
-                  </div>
-                  <div className={styles.content}>
-                    Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data.
-                  </div>
+                  <div className={styles.title} dangerouslySetInnerHTML={{__html: completeTransparencyTitle}}/>
+                  <div className={styles.content} dangerouslySetInnerHTML={{__html: completeTransparency}}/>
                 </div>
                 <div className={styles.points}>
-                  <div className={styles.title}>
-                    Own Your Data
-                  </div>
-                  <div className={styles.content}>
-                    Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data  co-working intuitive pitch deck  co-working intuitive pitch deck  co-working intuitive pitch deck
-                  </div>
+                  <div className={styles.title} dangerouslySetInnerHTML={{__html: ownTitle}}/>
+                  <div className={styles.content} dangerouslySetInnerHTML={{__html: own}}/>
                 </div>
               </div>
             </Col>
