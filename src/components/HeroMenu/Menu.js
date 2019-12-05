@@ -24,20 +24,20 @@ const Menu = ({whatWeDoText, supportText, consumerText}) => (
         <div className={styles.product_image}>
           <img src={whatWeDo} width="223" height="200" alt="What We Do" />
         </div>
-        <p className={styles.product_text} dangerouslySetInnerHTML={{__html: whatWeDoText}}/>
-        <p className={styles.learMore}>Learn More</p>
+        <div className={styles.product_text} dangerouslySetInnerHTML={{__html: whatWeDoText}}/>
+        {/*<p className={styles.learMore}>Learn More</p>*/}
       </Col>
       <Col className={["align-self-stretch", styles.product_description].join(" ")}>
         <div className={styles.product_image}><img src={support} width="217" height="171" alt="What We Do" /></div>
-        <p className={styles.product_text} dangerouslySetInnerHTML={{__html: supportText}}/>
-        <p className={styles.learMore}>Learn More</p>
+        <div className={styles.product_text} dangerouslySetInnerHTML={{__html: supportText}}/>
+        {/*<p className={styles.learMore}>Learn More</p>*/}
       </Col>
       <Col className={["align-self-stretch", styles.product_description].join(" ")}>
         <div className={styles.product_image}>
           <img src={consumer} width="275" height="163" alt="What We Do" />
         </div>
-        <p className={styles.product_text} dangerouslySetInnerHTML={{__html: consumerText}} />
-        <p className={styles.learMore}>Learn More</p>
+        <div className={styles.product_text} dangerouslySetInnerHTML={{__html: consumerText}} />
+        {/*<p className={styles.learMore}>Learn More</p>*/}
       </Col>
     </Row>
   </Container>
