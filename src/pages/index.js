@@ -85,7 +85,7 @@ const IndexPage = ({ data }) => {
       })}
       <Hero/>
       <Menu whatWeDoText={whatWeDo} supportText={support} consumerText={customer}/>
-      <Partners title={partnersTitle} conent={partnersContent}/>
+      <Partners title={partnersTitle} content={partnersContent}/>
       <OurOffers content={offersContent} title={offersTitle}/>
       <OurPromise privacy={privacyRight} privacyTitle={privacyRightTitle} completeTransparency={completePrivacy} completeTransparencyTitle={completePrivacyTitle} own={ownYourData} ownTitle={ownYourDataTitle}/>
       <OptOut browserOptOut={browserOptOut} browserOptOutTitle={browserOptOutTitle} deviceOptOut={deviceOptOut}
