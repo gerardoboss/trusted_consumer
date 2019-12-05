@@ -29,7 +29,7 @@ const Menu = ({whatWeDoText, supportText, consumerText}) => (
       </Col>
       <Col className={["align-self-stretch", styles.product_description].join(" ")}>
         <div className={styles.product_image}><img src={support} width="217" height="171" alt="What We Do" /></div>
-        <p className={styles.product_description} dangerouslySetInnerHTML={{__html: supportText}}/>
+        <p className={styles.product_text} dangerouslySetInnerHTML={{__html: supportText}}/>
         <p className={styles.learMore}>Learn More</p>
       </Col>
       <Col className={["align-self-stretch", styles.product_description].join(" ")}>
