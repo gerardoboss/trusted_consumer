@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./partners.module.scss"
 import { Container, Row, Col, Modal, Button, ModalTitle } from "react-bootstrap"
 
-const Partners = ({title, content}) => {
+const Partners = ({title, content, energyPartners}) => {
   const [show, setShow] = React.useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -23,7 +23,7 @@ const Partners = ({title, content}) => {
       <Modal.Header closeButton>
         <Modal.Title>Modal heading</Modal.Title>
       </Modal.Header>
-      <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+      <Modal.Body dangerouslySetInnerHTML={{__html: energyPartners}}/>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
           Close

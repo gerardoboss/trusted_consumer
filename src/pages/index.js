@@ -31,6 +31,13 @@ const IndexPage = ({ data }) => {
   let offersContent;
   let partnersContent;
   let partnersTitle;
+  let partnersEnergy;
+  let partnersMortgage;
+  let partnersMedical;
+  let partnersDebt;
+  let partnersDurableMedical;
+  let partnersHomeServices;
+
   return (
     <Layout>
       {data.allWordpressPost.nodes.map(function(node, i) {
@@ -79,13 +86,17 @@ const IndexPage = ({ data }) => {
             partnersContent = node.content
             partnersTitle = node.title
             break
+          case "c0cc9645-6e92-55a3-bdff-d5fa7c643f49":
+            partnersEnergy = node.content;
+            break;
           default:
+            console.log("test");
         }
         return ""
       })}
       <Hero/>
       <Menu whatWeDoText={whatWeDo} supportText={support} consumerText={customer}/>
-      <Partners title={partnersTitle} content={partnersContent}/>
+      <Partners title={partnersTitle} content={partnersContent} energyPartners={partnersEnergy} mortgagePartners={partnersMortgage} medicalPartners={partnersMedical} debtPartners={partnersDebt} durableMedicalPartners={partnersDurableMedical} homePartners={partnersHomeServices}/>
       <OurOffers content={offersContent} title={offersTitle}/>
       <OurPromise privacy={privacyRight} privacyTitle={privacyRightTitle} completeTransparency={completePrivacy} completeTransparencyTitle={completePrivacyTitle} own={ownYourData} ownTitle={ownYourDataTitle}/>
       <OptOut browserOptOut={browserOptOut} browserOptOutTitle={browserOptOutTitle} deviceOptOut={deviceOptOut}

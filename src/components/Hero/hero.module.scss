@@ -5,13 +5,16 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment:fixed;
-  color: white;
+  color: white !important;
   height: 400px;
   .trusted_row {
+    color: white !important;
     padding-right: 0px !important;
     margin-right: 0px !important;
     .trusted{
+      color: white !important;
       .trustedLogo{
+        color: white !important;
         margin-top: 5rem;
       }
     }
