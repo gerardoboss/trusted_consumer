@@ -89,6 +89,9 @@ const IndexPage = ({ data }) => {
           case "c0cc9645-6e92-55a3-bdff-d5fa7c643f49":
             partnersEnergy = node.content;
             break;
+          case "f84444a3-c48c-5d6a-8e59-b0f9521e56a6":
+            partnersHomeServices = node.content;
+            break;
           default:
             console.log("test");
         }
@@ -96,7 +99,7 @@ const IndexPage = ({ data }) => {
       })}
       <Hero/>
       <Menu whatWeDoText={whatWeDo} supportText={support} consumerText={customer}/>
-      <Partners title={partnersTitle} content={partnersContent} energyPartners={partnersEnergy} mortgagePartners={partnersMortgage} medicalPartners={partnersMedical} debtPartners={partnersDebt} durableMedicalPartners={partnersDurableMedical} homePartners={partnersHomeServices}/>
+      <Partners title={partnersTitle} content={partnersContent} partnersEnergy={partnersEnergy} mortgagePartners={partnersMortgage} medicalPartners={partnersMedical} debtPartners={partnersDebt} durableMedicalPartners={partnersDurableMedical} homePartners={partnersHomeServices}/>
       <OurOffers content={offersContent} title={offersTitle}/>
       <OurPromise privacy={privacyRight} privacyTitle={privacyRightTitle} completeTransparency={completePrivacy} completeTransparencyTitle={completePrivacyTitle} own={ownYourData} ownTitle={ownYourDataTitle}/>
       <OptOut browserOptOut={browserOptOut} browserOptOutTitle={browserOptOutTitle} deviceOptOut={deviceOptOut}
