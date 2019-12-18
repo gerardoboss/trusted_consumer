@@ -8,7 +8,7 @@ const OurPromise = ({privacyTitle, privacy, completeTransparencyTitle, completeT
       <Col>
         <Container className={styles.holder}>
           <Row>
-            <Col>
+            <Col md={8} sm={11}>
               <div className={styles.content}>
                 <div className={styles.title}>Our Promise</div>
                 <div className={styles.points}>

@@ -32,11 +32,12 @@ const IndexPage = ({ data }) => {
   let partnersContent;
   let partnersTitle;
   let partnersEnergy;
-  let partnersMortgage;
   let partnersMedical;
   let partnersDebt;
   let partnersDurableMedical;
   let partnersHomeServices;
+  let partnersInsurance;
+  let mortgage;
 
   return (
     <Layout>
@@ -92,6 +93,30 @@ const IndexPage = ({ data }) => {
           case "f84444a3-c48c-5d6a-8e59-b0f9521e56a6":
             partnersHomeServices = node.content;
             break;
+          case "93e1b2b0-3f00-556b-ae53-2c72e61bc9e2":
+            partnersDurableMedical = node.content;
+            break;
+          case "6df0e378-edea-5e5b-bfa9-1aa4c0373873":
+            partnersDebt = node.content;
+            break;
+          case "9008de68-a16e-5c33-bb55-93471f5bd006":
+            partnersMedical = node.content;
+            break;
+          case "5fe75bdb-481b-5970-9588-3fb285b4c52b":
+            mortgage += node.content;
+            break;
+          case "30201626-6002-5b2b-b666-80ef61da0ab2":
+            mortgage += node.content;
+            break;
+          case "173a671e-0f83-50de-b077-14b1dc6278f3":
+            mortgage += node.content;
+            break;
+          case "d49734c4-5e6d-55b9-bd65-8cc12f2d2571":
+            mortgage += node.content;
+            break;
+          case "515d89e9-8f59-5704-b830-515aa22f630b":
+            partnersInsurance = node.content;
+            break;
           default:
             console.log("test");
         }
@@ -99,7 +124,7 @@ const IndexPage = ({ data }) => {
       })}
       <Hero/>
       <Menu whatWeDoText={whatWeDo} supportText={support} consumerText={customer}/>
-      <Partners title={partnersTitle} content={partnersContent} partnersEnergy={partnersEnergy} mortgagePartners={partnersMortgage} medicalPartners={partnersMedical} debtPartners={partnersDebt} durableMedicalPartners={partnersDurableMedical} homePartners={partnersHomeServices}/>
+      <Partners title={partnersTitle} content={partnersContent} partnersEnergy={partnersEnergy} mortgagePartners={mortgage} medicalPartners={partnersMedical} debtPartners={partnersDebt} durableMedicalPartners={partnersDurableMedical} homePartners={partnersHomeServices} insurancePartners={partnersInsurance}/>
       <OurOffers content={offersContent} title={offersTitle}/>
       <OurPromise privacy={privacyRight} privacyTitle={privacyRightTitle} completeTransparency={completePrivacy} completeTransparencyTitle={completePrivacyTitle} own={ownYourData} ownTitle={ownYourDataTitle}/>
       <OptOut browserOptOut={browserOptOut} browserOptOutTitle={browserOptOutTitle} deviceOptOut={deviceOptOut}

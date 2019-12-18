@@ -1,8 +1,8 @@
 import React from "react"
 import styles from "./partners.module.scss"
-import { Container, Row, Col, Modal, Dropdown } from "react-bootstrap"
+import { Container, Row, Col, Modal, Dropdown, Button } from "react-bootstrap"
 
-const Partners = ({ title, content, partnersEnergy, mortgagePartners, medicalPartners, debtPartners, durableMedicalPartners, homePartners }) => {
+const Partners = ({ title, content, partnersEnergy, mortgagePartners, medicalPartners, debtPartners, durableMedicalPartners, homePartners, insurancePartners }) => {
   const [show, setShow] = React.useState(false)
   const [display, setDisplay] = React.useState(partnersEnergy)
   const handleClose = () => setShow(false)
@@ -27,6 +27,9 @@ const Partners = ({ title, content, partnersEnergy, mortgagePartners, medicalPar
       case "home":
         setDisplay(homePartners);
         break
+      case "insurance":
+        setDisplay(insurancePartners);
+        break;
       default:
         setDisplay(partnersEnergy);
     }
@@ -38,9 +41,9 @@ const Partners = ({ title, content, partnersEnergy, mortgagePartners, medicalPar
           <div className={styles.title} dangerouslySetInnerHTML={{ __html: title }}/>
           <div className={styles.partner_content} dangerouslySetInnerHTML={{ __html: content }}/>
           <div className={styles.button_bar}>
-            <button onClick={handleShow} className={styles.partner_button}>
+            <Button onClick={handleShow} className={styles.partner_button} variant="warning">
               VIEW OUR PARTNERS
-            </button>
+            </Button>
           </div>
         </Col>
       </Row>
@@ -60,6 +63,7 @@ const Partners = ({ title, content, partnersEnergy, mortgagePartners, medicalPar
                 <Dropdown.Item eventKey="durable">Durable Medical</Dropdown.Item>
                 <Dropdown.Item eventKey="home">Home Partners</Dropdown.Item>
                 <Dropdown.Item eventKey="debt">Debt Partners</Dropdown.Item>
+                <Dropdown.Item eventKey="insurance">Insurance Partners</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Modal.Title>
