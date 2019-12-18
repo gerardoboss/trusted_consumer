@@ -4,9 +4,17 @@
   .trustBar {
     .trustLink, .trustLink:visited, .trustLink:hover, .navbar-light, a, a:hover, a:visited{
       color: $boss_yellow !important;
+      justify-content: center;
+    }
+    .trustLink:hover{
+      color: #bf7514 !important;
     }
    a{
       margin: 0 1rem;
     }
+  }
+  .responsive-logo{
+    width: 50%;
+    height: auto;
   }
 }

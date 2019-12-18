@@ -12,22 +12,24 @@ const Header = ({ siteTitle }) => (
         <Container>
           <Row>
             <Col>
-              <Navbar className="justify-content-between">
+              <Navbar className="justify-content-between" collapseOnSelect expand="lg" variant="dark">
                 <Navbar.Brand href="#home">
                   <img
                     src={logo}
-                    width="265"
-                    height="62"
                     alt="Trusted Consumer Logo"
+                    className={styles.responsive-logo}
                   />
                 </Navbar.Brand>
-                <Nav className={styles.trustBar}>
-                  <Link to="/#heroMenu" className={styles.trustLink}>ABOUT TRUSTED CONSUMER</Link>
-                  <Link className={styles.trustLink} to="/#partners">PARTNERS</Link>
-                  <Link className={styles.trustLink} to="/#ourOffers">OUR OFFERS</Link>
-                  <Link className={styles.trustLink} to="/#optOut">OPT OUT</Link>
-                  <Link className={styles.trustLink} to="/#privacy">CONTACT US</Link>
-                </Nav>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                  <Nav className={["align-bottom", styles.trustBar].join(" ")} >
+                    <Link to="/#heroMenu" className={styles.trustLink}>ABOUT TRUSTED CONSUMER</Link>
+                    <Link className={styles.trustLink} to="/#partners">PARTNERS</Link>
+                    <Link className={styles.trustLink} to="/#ourOffers">OUR OFFERS</Link>
+                    <Link className={styles.trustLink} to="/#optOut">OPT OUT</Link>
+                    <Link className={styles.trustLink} to="/#privacy">CONTACT US</Link>
+                  </Nav>
+                </Navbar.Collapse>
               </Navbar>
             </Col>
           </Row>

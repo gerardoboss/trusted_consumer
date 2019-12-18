@@ -2,6 +2,7 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import styles from "./hero.module.scss"
 import trusted from "../../images/trusted_connection.png"
+import { Link } from "gatsby"
 
 const Hero = () => (
   <Container fluid="true" className={styles.hero} id="hero">
@@ -10,7 +11,7 @@ const Hero = () => (
         <Container>
           <Row>
             <Col className={styles.trustedLogo}>
-              <img src={trusted} alt="Trusted Connection"/>
+              <Link  to="/#partners"><img src={trusted} alt="Trusted Connection" border="0"/></Link>
             </Col>
           </Row>
         </Container>
